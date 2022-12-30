@@ -1,7 +1,7 @@
 # *deepreplace*: Find and replace string segments in nested objects
 
 [![View on GitHub](https://img.shields.io/badge/GitHub-Repository-171515)](https://github.com/WD40andTape/deepreplace)
-<!--[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/122677-fieldfun-apply-function-to-matching-fields-of-structures)-->
+[![View on File Exchange](https://www.mathworks.com/matlabcentral/images/matlab-file-exchange.svg)](https://uk.mathworks.com/matlabcentral/fileexchange/122687-deepreplace-replace-string-segments-in-nested-objects)
 
 ## Summary
 
