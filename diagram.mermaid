@@ -1,0 +1,13 @@
+flowchart  LR
+    subgraph main["<b>newData = deepreplace(data,match,replacement)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"]
+        direction LR
+        structIn[/"<b>S</b>&lt;struct&gt;<hr/><b>field1</b>: <i>&quot;String1&quot;</i>&nbsp;&nbsp;&nbsp;<br /><b>field2</b>: <i>&quot;String2&quot;</i>&nbsp;&nbsp;&nbsp;<br /><b>field3</b>: <i>&quot;Value3&quot;</i>&nbsp;&nbsp;&nbsp;"/]
+        structFun["<b>deereplace</b>( <b>S</b>, <i>&quot;String&quot;</i>, <i>&quot;str&quot;</i> )"]
+        structOut[/"&lt;struct&gt;<hr/><b>field1</b>: <i>&quot;str1&quot;</i>&nbsp;&nbsp;&nbsp;<br /><b>field2</b>: <i>&quot;str2&quot;</i>&nbsp;&nbsp;&nbsp;<br /><b>field3</b>: <i>&quot;Value3&quot;</i>&nbsp;&nbsp;&nbsp;"/]
+        cellIn[/"<b>C</b>&lt;cell&gt;<hr/>{ <i>&quot;String1&quot;</i>, <i>&quot;String2&quot;</i>, <i>&quot;Value3&quot;</i> }&nbsp;&nbsp;&nbsp;"/]
+        cellFun["<b>deereplace</b>( <b>C</b>, [<i>&quot;String&quot;</i>,<i>&quot;Value&quot;</i>], [<i>&quot;str&quot;</i>,<i>&quot;val&quot;</i>] )"]
+        cellOut[/"&lt;cell&gt;<hr/>{ <i>&quot;str1&quot;</i>, <i>&quot;str2&quot;</i>, <i>&quot;val3&quot;</i> }&nbsp;&nbsp;&nbsp;"/]
+    end
+    structIn --> structFun --> structOut
+    cellIn --> cellFun --> cellOut
+    style main fill:#ffffff
