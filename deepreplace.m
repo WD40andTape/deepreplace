@@ -97,7 +97,7 @@ function tf = istext(text)
     tf = ischar(text) | iscellstr(text) | isstring(text);
 end
 function tf = istextscalar(text)
-    tf = ( isstring(text) & isscalar(text) ) | ...
+    tf = ( ( isstring(text) | iscellstr(text) ) & isscalar(text) ) | ...
         ( ischar(text) & ( isrow(text) | isequal(size(text),[0 0]) ) );
 end
 function tf = cancontaintext(x)
